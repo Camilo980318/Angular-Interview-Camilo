@@ -1,0 +1,25 @@
+<div class="row pt-20">
+
+    <div class="col-md-12">
+        <div class="container-lg">
+            <br>
+            <h1>List Post</h1><br>
+            <table class="table">
+                <thead class="thead-dark">
+                    <th>ID</th>
+                    <th>Post</th>
+                    <th>Action</th>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let post of data">
+                        <td> {{post.id}} </td>
+                        <td> {{post.title}} </td>
+                        <td>
+                            <button class="btn btn-primary" (click)="getDetails(post)"> Ver</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
